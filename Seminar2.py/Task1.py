@@ -1,33 +1,25 @@
 #Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
-number=float(input("Введите число N=")) 
+n=input("Введите число N=")
+num=str((n)) 
 
-num=int(number)
-print(type(num))
+sum=int(0) 
+for i in num:
+    if i!=".":
+        sum+=int(i)
+print(sum)
+  
+# n=input("Введите число N=")
+# num=str((n)) 
 
+# sum=int(0)
 
-def summa(num):
-    while num>0:
-        sum=0
-        a=num%10
-        sum+=a
-        print(sum)
-        num=num//10
-    return sum
-
-summa(num)
+# for i in num:
+#     print(i.isdigit())
+#     if i.isdigit():
+#         sum+=int(i)
+    
+# print(sum)
+     
     
     
-    
-    
-    
-#     num=int([number])
-# print(type(num))
-# print("The floating number is : " + str(number))
-
-# # Convert Float to digit list
-# # using list comprehension + isdigit()
-# res = [int(ele) for ele in str(number) if ele.isdigit()]
-	
-# # printing result
-# print("List of floating numbers is : " + str(res))
