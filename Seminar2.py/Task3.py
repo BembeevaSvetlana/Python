@@ -1,14 +1,12 @@
-import nntplib
-from Seminar2.py.Task2 import N
-
-
 # Задайте список из n чисел последовательности (1+1/n)^n
 # Выведитте на экран саму последовательность и сумму элеементов этой последовательности (для проверки сумма для 4 элементов = 9,06 (примерно))
 
 n=int(input("введите число="))
 list=[]
 
-summa=0
+for i in range(1,n+1):
+    a=((1+1/i)**i)
+    list.append(round(a,2))
+print(list)    
 
-for i in range(n):
-    a=((1+1/n)**n)
+print((sum(list)))
