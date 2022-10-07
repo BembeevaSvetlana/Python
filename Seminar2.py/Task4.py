@@ -1,4 +1,5 @@
 import random
+
 mylist=[]
 for _ in range(10):
     mylist.append(random.randint(0,50))
