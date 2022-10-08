@@ -17,20 +17,18 @@ for i in range(len(list)):
         newlist.append(el)    
 print(newlist)
 
-# def minmax(newlist):
-#     newlist[0]=n_min
-#     newlist[0]=n_max 
-#     for i in range(len(newlist)):
-#         if  i<n_min:
-#             n_min=i
-#         else:
-#             if i>n_max:
-#                 i=n_max
-#             else:
-#               print(n_max,n_min)
-#     return(n_max,n_min)      
+def minmax(newlist):
+    n_min=newlist[0]
+    n_max = newlist[0]
+    for i in range(len(newlist)):
+        if  newlist[i]<n_min:
+            n_min=newlist[i]
+        if  newlist[i]>n_max:
+            n_max=newlist[i]
+         
+    return(n_max,n_min)      
 
-# minmax(newlist)
+print(minmax(newlist))
 a=min(newlist)
 b=max(newlist)
 
