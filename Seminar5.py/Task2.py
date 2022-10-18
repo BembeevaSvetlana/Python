@@ -57,10 +57,9 @@ from random import randint
 # Чертов БОТ!
 
 pl1 = input("Введите имя первого игрока: ")
-pl2 = "компьютер Вася"
+pl2 = "компьютер Вася-второй игрок"
 print(pl2)
-total = 80
-
+total = int(input("Введите количество конфет на столе: "))
 flag = randint(0,1) 
 if flag == 1:
     winner = pl1
@@ -77,9 +76,7 @@ def input_dat(name):
 
 def input_comp(total):
       k = randint(1,29)
-      print(k)
-      while total :
-        k=k-1     
+       
       return k
       
       
@@ -97,7 +94,7 @@ while total>28:
         flag=False
         step_print(pl1, k, counter1, total)
     else:
-        k = input_comp(pl2)
+        k = input_comp(total)
         counter2 += k
         total -= k
         flag= True
