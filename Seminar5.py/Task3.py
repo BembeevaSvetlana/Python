@@ -1,5 +1,4 @@
-# Создайте программу для игры в 'Крестики-нолики'.
-
+#  Создайте программу для игры в 'Крестики-нолики'.
 maps = [1,2,3,
         4,5,6,
         7,8,9]
@@ -12,7 +11,7 @@ victories = [[0,1,2],
              [2,5,8],
              [0,4,8],
              [2,4,6]]
- 
+
 def print_maps():
     print(maps[0], end = " ")
     print(maps[1], end = " ")
@@ -29,10 +28,11 @@ def print_maps():
 def step_maps(step,symbol):
     ind = maps.index(step)
     maps[ind] = symbol
- 
+
 def get_result():
     win = ""
-     for i in victories:
+    for i in victories: 
+          
         if maps[i[0]] == "X" and maps[i[1]] == "X" and maps[i[2]] == "X":
             win = "X"
         if maps[i[0]] == "O" and maps[i[1]] == "O" and maps[i[2]] == "O":
@@ -44,14 +44,15 @@ game_over = False
 player1 = True
  
 while game_over == False:
-      print_maps()
-      
-        if player1 == True:
-         symbol = "X"
-         step = int(input("Player 1, ваш ход: "))
+     
+    print_maps()
+     
+    if player1 == True:
+        symbol = "X"
+        step = int(input("Человек 1, ваш ход: "))
     else:
-         symbol = "O"
-         step = int(input("Player 2, ваш ход: "))
+        symbol = "O"
+        step = int(input("Человек 2, ваш ход: "))
  
     step_maps(step,symbol) 
     win = get_result() 
@@ -61,6 +62,6 @@ while game_over == False:
         game_over = False
  
     player1 = not(player1)        
-  
+       
 print_maps()
 print("Победил", win)

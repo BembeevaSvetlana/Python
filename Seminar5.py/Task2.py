@@ -75,8 +75,7 @@ def input_dat(name):
    return x
 
 def input_comp(total):
-      k = randint(1,29)
-       
+      k = (total -29)%28 
       return k
       
       
