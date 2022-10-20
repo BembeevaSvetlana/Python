@@ -75,8 +75,15 @@ def input_dat(name):
    return x
 
 def input_comp(total):
-      k = (total -29)%28 
-      return k
+    if(total-29)%28:
+        return (total-29)%28
+    else:
+        return 28
+    # if total ==29:
+    #     k=28
+    # else:
+    #     k=(total - 29) % 28
+    # return k
       
       
 def step_print(name, k, counter, total):
