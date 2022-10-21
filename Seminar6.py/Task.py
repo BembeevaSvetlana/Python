@@ -15,11 +15,11 @@
 # clean_line=' '.join(new_words)
 # print(clean_line)
 
-#  # Измененный код.
+# #  # Измененный код.
 
-line = 'абвQ/абвG/абвT/    /aaaaaа/dddddб/еее!/!ооооо/абв/!ааабббсссс/!ддддд3049'
-print(line)
-words = line.split('/')
-new_words=list(filter(lambda word:'абв' not in word, words))
-clean_line=' '.join(new_words)
+words = 'абвQ/абвG/абвT/aaaaaа/dddddб/еее!/!ооооо/абв/!ааабббсссс/!ддддд3049'
+print(words)
+new_words=list(filter(lambda word:'абв' not in word, words.split("/")))
+clean_line='  '.join(new_words)
 print(clean_line)
+
