@@ -27,8 +27,7 @@ def mix_el(mylist):
     newlist=mylist[:]
 
     for j in range(0,len(newlist)):
-    #print(newlist)
-        ind=random.randint(0,len(newlist)-1)
+        ind=random.randint(0, len(newlist)-1)
     
         temp=newlist[j]
         newlist[j]=newlist[ind]
