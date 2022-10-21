@@ -1,13 +1,13 @@
 #Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
-n=input("Введите число N=")
-num=str((n)) 
+# n=input("Введите число N=")
+# num=str((n)) 
 
-sum=int(0) 
-for i in num:
-    if i!=".":
-        sum+=int(i)
-print(sum)
+# sum=int(0) 
+# for i in num:
+#     if i!=".":
+#         sum+=int(i)
+# print(sum)
   
 # n=input("Введите число N=")
 # num=str((n)) 
@@ -20,6 +20,5 @@ print(sum)
 #         sum+=int(i)
     
 # print(sum)
-     
-    
+
     

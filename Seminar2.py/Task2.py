@@ -8,7 +8,10 @@ p=1
 list=[]
 for i in range(1,num+1):
     p *=i
-    list.append(p)
+    list.append(p)          
 print(list)
       
+      
+      
+
         
