@@ -18,3 +18,4 @@ for j in range(0,len(newlist)):
     newlist[ind]=temp
    
 print(newlist)
+
