@@ -12,21 +12,16 @@ import random
 
 #Измененный код
 
-# list=[random. randint(-10,10) for x in range(5)]
-# print(list)
-# sum=0
+list=[random. randint(-10,10) for x in range(5)]
+print(list)
 
-# def summa_f(list):
-#      sum=0 
-#      for x,element in enumerate(list):
-#             if x % 2 !=0:
-#                sum += element
-#      return sum
-            
-# sum=summa_f(list)          
-
-# print("Сумма чисел списка, стоящих на нечетных позициях, равна=",sum)
-
+def summa_f(list):
+     sum=0 
+     for x,element in enumerate(list):
+        if x % 2 !=0:
+            sum += element
+     return sum
+print("Сумма чисел списка, стоящих на нечетных позициях, равна=", summa_f(list))
 
 
 
